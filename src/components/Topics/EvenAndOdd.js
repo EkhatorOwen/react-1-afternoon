@@ -21,12 +21,12 @@ class EvenAnadOdd extends Component {
         let evenArr = [];
         
         for(let i = 0; i<arr.length; i++){
-            if(arr[i]%2==0){
-                evenArr.push(arr[i])
-                this.setState({evenArray: evenArr})
+            if(arr[i]%2===0){
+                evenArr.push(parseInt(arr[i], 10));
+                this.setState({evenArray: evenArr});
             }
             else{
-                oddArr.push(arr[i])
+                oddArr.push(parseInt(arr[i], 10))
                 this.setState({oddArray: oddArr})
             }
     }
